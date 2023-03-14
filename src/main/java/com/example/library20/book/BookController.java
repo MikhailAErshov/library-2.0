@@ -2,14 +2,7 @@ package com.example.library20.book;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,9 +30,22 @@ public class BookController {
         return operationsHandler.addBook(books);
     }
 
+    @PostMapping(path = "/add_target")
+    public BookDto addBook(@RequestBody BookDto bookDto) {
+        return operationsHandler.addBook(bookDto);
+    }
+
     @DeleteMapping(path = "/delete")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteBook(@RequestParam String name) {
         operationsHandler.deleteBook(name, books);
     }
+
+    @DeleteMapping(path = "/clear")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void clear() {
+        books.clear();
+    }
+
+
 }

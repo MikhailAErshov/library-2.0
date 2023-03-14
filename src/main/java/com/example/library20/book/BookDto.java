@@ -12,6 +12,26 @@ public class BookDto {
 
     private CategoryDto category;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public CategoryDto getCategory() {
+        return category;
+    }
+
     public void setCategory(CategoryDto categoryDto) {
         if (categoryDto.getName() != null) {
             this.category = categoryDto;
@@ -24,4 +44,9 @@ public class BookDto {
         this.name = name;
         this.author = author;
     }
+
+    public BookDto(){
+
+    }
+
 }

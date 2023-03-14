@@ -2,7 +2,7 @@ package com.example.library20.example;
 
 import com.example.library20.book.BooksOperations;
 import com.example.library20.book.BookDto;
-import com.github.javafaker.Faker;
+import net.datafaker.Faker;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,10 +1,10 @@
 package com.example.library20.example;
 
 import com.example.library20.book.BookDto;
-import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import net.datafaker.Faker;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,7 @@ public class RestAssuredTest extends BaseTest{
 
     @BeforeAll
     public static void setUp() {
-        RestAssured.baseURI = "http://localhost:8081";
+        RestAssured.baseURI = "http://localhost:8090";
     }
 
     @BeforeEach

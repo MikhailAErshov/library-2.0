@@ -1,12 +1,13 @@
 package com.example.library20.utils;
 
 import com.example.library20.newspaper.NewspaperDto;
-import com.github.javafaker.Faker;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import com.example.library20.book.BookDto;
+import net.datafaker.Faker;
 
 public class GenerateUtils {
 

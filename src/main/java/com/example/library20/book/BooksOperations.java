@@ -1,12 +1,14 @@
 package com.example.library20.book;
 
-import com.github.javafaker.Faker;
+
 import lombok.RequiredArgsConstructor;
+import net.datafaker.Faker;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Objects;
 
+import static com.example.library20.Application.books;
 import static com.example.library20.Application.writeBookData;
 
 @Component
@@ -29,4 +31,12 @@ public class BooksOperations {
 
         writeBookData(books);
     }
+
+    public BookDto addBook(BookDto bookDto){
+        books.add(bookDto);
+        writeBookData(books);
+        return bookDto;
+
+    }
+
 }

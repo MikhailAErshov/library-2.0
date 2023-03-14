@@ -1,7 +1,7 @@
 package com.example.library20.newspaper;
 
-import com.github.javafaker.Faker;
 import lombok.RequiredArgsConstructor;
+import net.datafaker.Faker;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;

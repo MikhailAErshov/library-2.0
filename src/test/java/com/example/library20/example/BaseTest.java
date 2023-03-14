@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class BaseTest {
 
-    static List<BookDto> testBooks = new ArrayList<>();
+    public static List<BookDto> testBooks = new ArrayList<>();
 
     @BeforeEach
     public void setBooks() throws IOException {

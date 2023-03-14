@@ -3,7 +3,7 @@ package com.example.library20.example;
 import com.example.library20.book.BookController;
 import com.example.library20.book.BookDto;
 import com.example.library20.book.BooksOperations;
-import com.github.javafaker.Faker;
+import net.datafaker.Faker;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
